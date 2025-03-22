@@ -1,34 +1,141 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Home } from './Home/Home'
+import { InputAdornment, TextField } from '@mui/material'
+import { About } from './About/About'
+import Projects from './Projects/Projects';
+import AssistantIcon from '@mui/icons-material/Assistant';
+import './index.css'
+import { BannerLayer, ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
+import { Skills } from './Skills/Skills';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [_isHome, setIsHome] = useState(true);
+
+
+  const background: BannerLayer = {
+    translateY: [0, 0],
+    opacity: [1, 0],
+    scale: [1.05, 1, 'easeOutCubic'],
+    shouldAlwaysCompleteAnimation: true,
+    children: (
+      <div className='bg-container-back' style={{
+        height: '100vh'
+      }}></div>
+    )
+  };
+  const background2: BannerLayer = {
+    translateY: [0, 0],
+    opacity: [0.8, 0],
+    scale: [1.05, 1, 'easeOutCubic'],
+    shouldAlwaysCompleteAnimation: true,
+    children: (
+      <div className='bg-container-back-two' style={{
+        height: '100vh'
+      }}></div>
+    )
+  };
+
+  const headline: BannerLayer = {
+    translateY: [0, 30],
+    opacity: [1.0, 0],
+    scale: [1, 1.05, 'easeOutCubic'],
+    shouldAlwaysCompleteAnimation: true,
+    expanded: false,
+    children: (
+      <Home onSetIsHome={setIsHome} />
+    ),
+  };
+
+  const headline2: BannerLayer = {
+    translateY: [0, 30],
+    scale: [1, 1.05, 'easeOutCubic'],
+    shouldAlwaysCompleteAnimation: true,
+    expanded: false,
+    children: (
+      <About />
+    ),
+  };
+
+  const headline3: BannerLayer = {
+    translateY: [0, 30],
+    scale: [1, 1.05, 'easeOutCubic'],
+    shouldAlwaysCompleteAnimation: true,
+    expanded: false,
+    children: (
+      <Skills />
+    ),
+  };
+  const headline4: BannerLayer = {
+    translateY: [0, 30],
+    scale: [1, 1.05, 'easeOutCubic'],
+    shouldAlwaysCompleteAnimation: true,
+    expanded: false,
+    children: (
+      <Projects />
+    ),
+  };
+
+  const foreground: BannerLayer = {
+    scale: [1, 1.1, 'easeOutCubic'],
+    opacity: [1.0, 0],
+    shouldAlwaysCompleteAnimation: true,
+    children: (
+      <TextField
+        fullWidth
+        sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '75vh', zIndex: '100', width: '70%', marginLeft: '15%', textAlign: 'center' }}
+        slotProps={{
+          input: {
+            startAdornment: (
+              <InputAdornment position="start">
+                <AssistantIcon />
+              </InputAdornment>
+            ),
+          },
+        }}
+        variant="standard"
+      />),
+  };  
+
+  const gradientOverlay: BannerLayer = {
+    opacity: [0, 0.8],
+    shouldAlwaysCompleteAnimation: true,
+    expanded: false,
+    children: (
+      <div className="gradient inset" />
+    ),
+  };
+  const gradientOverlay2: BannerLayer = {
+    opacity: [0.2, 0.8],
+    shouldAlwaysCompleteAnimation: true,
+    expanded: false,
+    children: (
+      <div className="gradient-two inset" />
+    ),
+  };
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ParallaxProvider>
+      <ParallaxBanner
+        layers={[background, headline, gradientOverlay, foreground]}
+        className="full"
+      />       
+      <ParallaxBanner
+        layers={[background2, gradientOverlay2, headline2]}
+        className="full"
+      />
+      <ParallaxBanner
+        layers={[background, gradientOverlay, headline3]}
+        className="full"
+      />
+      <ParallaxBanner
+        layers={[background2, gradientOverlay2, headline4]}
+        className="full"
+      />
+    </ParallaxProvider>
+
+
+
   )
 }
 

@@ -1,11 +1,17 @@
-:root {
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace;
+} */
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #f9f5f5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,14 +26,6 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -65,4 +63,156 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+.in-view {
+  opacity: 1;
+  bottom: 100;
+  right: 100;
+  position: relative;
+}
+
+.icon-button-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+  border-radius: 50%;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+
+.container-body {
+  height: 9000px;
+  background-color: black;
+}
+.bg-container-back {
+  background-image: linear-gradient(to bottom, #495e70 5%, #ffffff);
+  position: relative;
+  width: 100% !important;
+  margin: auto;
+  margin-top: 0%;
+}
+.bg-container-back-two {
+  background-image: linear-gradient(to bottom, #ffffff , #495e70 75%);
+  position: relative;
+  width: 100% !important;
+  margin: auto;
+  margin-top: 0%;
+}
+.bg-container {
+  background-image: linear-gradient(169deg, #ffffff 70%, #495e70 70%);
+  position: relative;
+  width: 100% !important;
+  height: 800px;
+  margin: auto;
+  margin-top: 0%;
+}
+.bg-container-two {
+  background-color: #ffffff;
+  position: relative;
+  width: 100% !important;
+  height: 1800px;
+  margin: auto;
+  padding-top: 25%;
+}
+.bg-container-three {
+  background-image: linear-gradient(169deg, #ffffff 70%, #495e70 70%);
+  position: relative;
+  width: 100% !important;
+  height: 800px;
+  margin: auto;
+}
+.bg-container h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  font-size: 40px;
+  
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 300vh;
+  background: #000;
+}
+
+.headline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 10vw;
+}
+
+.headline-two {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 50;
+  font-size: 5vw;
+}
+
+.headerline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 30;
+  font-size: 3vw;
+}
+
+.titleline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 15;
+  font-size: 1.5vw;
+}
+
+.descriptionline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 1;
+  font-size: 0.2vw;
+}
+
+.wider {
+  width: 200px;
+}
+
+.inset {
+  position: absolute;
+  inset: 0;
+}
+.white {
+  color: white;
+}
+.gray {
+  color: #446;
+}
+
+.full {
+  height: 100vh;
+}
+
+.fulltwo {
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradient {
+  background: linear-gradient( #495e70 15%, #ffffff);
+}
+
+.gradient-white {
+  background: linear-gradient( #ffffff, #ffffff);
+}
+
+.gradient-two {
+  background: linear-gradient( #ffffff 15%, #495e70 );
+}
+
+.about {
+  text-align: 'center' !important;
+  margin:auto;
+  background-color: white;
 }
