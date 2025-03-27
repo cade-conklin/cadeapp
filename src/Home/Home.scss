@@ -1,0 +1,16 @@
+
+
+.textfield {
+    transition: all 0.5s ease-in-out;
+}
+
+.in-view {
+    opacity: 1;
+    translate: 100px 100px;
+}
+
+.out-view {
+  opacity: 0;
+  bottom: 105px;
+  right: 105px;
+}
