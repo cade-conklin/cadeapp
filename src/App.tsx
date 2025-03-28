@@ -97,7 +97,7 @@ function App() {
   };  
 
   const gradientOverlay: BannerLayer = {
-    opacity: [0, 0.8],
+    opacity: [0.2, 0.8],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
     children: (

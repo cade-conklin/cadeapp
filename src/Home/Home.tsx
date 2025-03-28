@@ -21,7 +21,7 @@ export const Home: FC<HomeProps> = ({ onSetIsHome }) => {
                 <div className="center">
                     <Stack spacing={6} className="inset center">
                         <h1 className="headline-two white">Cade Conklin</h1>
-                        <h3 className="headerline white">
+                        <h3 className="headerline gray">
                             Software Development Engineer
                         </h3>
                         <p className="titleline white">
