@@ -16,7 +16,7 @@
   margin-top: 0%;
 }
 .bg-container-back-two {
-  background-image: linear-gradient(to bottom, #ffffff , #495e70 75%);
+  background-image: linear-gradient(to bottom, #ffffff 5% , #495e70 );
   position: relative;
   width: 100% !important;
   margin: auto;
@@ -133,7 +133,7 @@ body {
 }
 
 .gradient {
-  background: linear-gradient( #495e70 15%, #ffffff);
+  background: linear-gradient( #495e70 5%, #ffffff);
 }
 
 .gradient-white {
@@ -141,7 +141,7 @@ body {
 }
 
 .gradient-two {
-  background: linear-gradient( #ffffff 15%, #495e70 );
+  background: linear-gradient( #ffffff 5%, #495e70 );
 }
 
 .about {
