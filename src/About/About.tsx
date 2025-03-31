@@ -18,7 +18,7 @@ export const About: FC = () => {
                             <Grid container spacing={3}>
                                 <Grid size={2}/>
                                 <Grid size={3}>
-                                    <img src='src/assets/adobe.svg' style={{height: '50px', width: '50px'}}></img>
+                                    <img src='https://cconklin-website.s3.us-east-1.amazonaws.com/assets/adobe.svg' style={{height: '50px', width: '50px'}}></img>
                                 </Grid>
                                 <Grid size={1}/>
                                 <Grid size={3} style={{height: '100px', width: '100px'}}>
