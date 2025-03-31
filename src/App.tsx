@@ -48,6 +48,7 @@ function App() {
 
   const headline2: BannerLayer = {
     translateY: [0, 30],
+    opacity: [2.0, 0],
     scale: [1, 1.05, 'easeOutCubic'],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
@@ -58,6 +59,7 @@ function App() {
 
   const headline3: BannerLayer = {
     translateY: [0, 30],
+    opacity: [2.0, 0],
     scale: [1, 1.05, 'easeOutCubic'],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
