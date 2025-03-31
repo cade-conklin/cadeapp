@@ -12,20 +12,20 @@ export const Skills: FC = () => {
     const [icon, setIcon] = useState<number | null>(null);
     const chipData: ChipData[] = [
         { key: 15, label: 'Golang', src: 'https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_White.svg' },
-        { key: 1, label: 'Javascript', src: 'src/assets/javascript-logo-svgrepo-com.svg' },
-        { key: 2, label: 'Typescript', src: 'src/assets/ts-logo-256.svg' },
-        { key: 3, label: 'C++', src: 'src/assets/c.svg' },
-        { key: 4, label: 'Python', src: 'src/assets/python-5.svg' },
-        { key: 5, label: 'Ruby', src: 'src/assets/ruby.svg' },
-        { key: 6, label: 'Java', src: 'src/assets/java-4.svg' },
-        { key: 7, label: 'Scala', src: 'src/assets/scala-4.svg' },
+        { key: 1, label: 'Javascript', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/javascript-logo-svgrepo-com.svg' },
+        { key: 2, label: 'Typescript', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/ts-logo-256.svg' },
+        { key: 3, label: 'C++', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/c.svg' },
+        { key: 4, label: 'Python', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/python-5.svg' },
+        { key: 5, label: 'Ruby', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/ruby.svg' },
+        { key: 6, label: 'Java', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/java-4.svg' },
+        { key: 7, label: 'Scala', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/scala-4.svg' },
         { key: 8, label: 'New Relic', src: 'https://newrelic.com/themes/custom/erno/assets/mediakit/new_relic_logo_vertical_white.svg' },
-        { key: 9, label: 'Splunk', src: 'src/assets/splunk.svg' },
-        { key: 10, label: 'Docker', src: 'src/assets/docker-4.svg' },
-        { key: 11, label: 'MySQL', src: 'src/assets/mysql-logo-pure.svg' },
-        { key: 12, label: 'PostgresQL', src: 'src/assets/postgresql.svg' },
-        { key: 13, label: 'Node.js', src: 'src/assets/nodejs-1.svg' },
-        { key: 14, label: 'GraphQL', src: 'src/assets/graphql-logo-2.svg' },
+        { key: 9, label: 'Splunk', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/splunk.svg' },
+        { key: 10, label: 'Docker', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/docker-4.svg' },
+        { key: 11, label: 'MySQL', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/mysql-logo-pure.svg' },
+        { key: 12, label: 'PostgresQL', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/postgresql.svg' },
+        { key: 13, label: 'Node.js', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/nodejs-1.svg' },
+        { key: 14, label: 'GraphQL', src: 'https://cconklin-website.s3.us-east-1.amazonaws.com/assets/graphql-logo-2.svg' },
     ];
     return (
         <div >
