@@ -98,14 +98,41 @@ body {
 }
 
 .skills-small {
-  height: 80px;
-  width: 80px;
+  height: 8vh;
+  width: 8vh;
 }
 
 .skills-large {
-  height: 100px;
-  width: 100px;
+  height: 10vh;
+  width: 10vh;
 }
+
+.logos-large {
+  height: 10vh;
+  width: 10vh;
+}
+
+@media only screen and (max-width: 600px)  {   
+  .skills-small { width: 40%; height: 40% }
+  .skills-large {
+    width: 50%; height: 50%
+  }
+  .logos-large {
+    width: 70%; height: 70%
+  }
+  .titleline {
+    font-weight: 100%;
+    font-size: 100%;
+  }
+  .headline {
+    font-weight: 100%;
+    font-size: 100%;
+  }
+  .headerline {
+    font-weight: 100%;
+    font-size: 100%;
+  }
+}   
 
 .inset {
   position: absolute;
