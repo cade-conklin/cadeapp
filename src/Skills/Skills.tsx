@@ -32,15 +32,12 @@ export const Skills: FC = () => {
             <Grid container spacing={3}>
                 <Grid size={3} />
                 <Grid size={6}>
-                        <Stack spacing={6} className="center">
+                        <Stack spacing={6} className="center" justifyContent={'center'}>
                             <h2 className="headline-two white">My Skills</h2>
-                            <Grid container spacing={3}>
-                                <Grid size={2} />
-                                <Grid size={8}>
-                                    <Grid container spacing={{ xs: 6, md: 6 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                                    <Grid container spacing={{ xs: 8, sm: 2, md: 4 }} columns={{ xs: 12, sm: 12, md: 12 }}>
                                         {chipData.map((data) => {
                                             return (
-                                                <Grid key={data.key} className={'skills-large'} size={{ xs: 3, sm: 3, md: 3 }} display="flex" justifyContent="center" alignItems="center" onMouseEnter={() => setIcon(data.key)} onMouseLeave={() => setIcon(null)}>
+                                                <Grid key={data.key} className={'skills-large'} size={{ xs: 4, sm: 3, md: 3 }} display="flex" justifyContent="center" alignItems="center" onMouseEnter={() => setIcon(data.key)} onMouseLeave={() => setIcon(null)}>
                                                     <Button size={'small'} >  
                                                         <img className={icon && data.key == icon ? 'skills-large' : 'skills-small'} src={data.src}/>
                                                     </Button>
@@ -48,9 +45,6 @@ export const Skills: FC = () => {
                                             );
                                         })}
                                     </Grid>
-                                </Grid>
-                                <Grid size={2} />
-                            </Grid>
                         </Stack>
                 </Grid>
                 <Grid size={3} />
