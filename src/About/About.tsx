@@ -10,7 +10,7 @@ export const About: FC = () => {
                 <h2 className="headerline white">Where I have worked</h2>
                 <Stack
                     direction="row"
-                    spacing={8}
+                    spacing={3}
                     sx={{
                         justifyContent: "space-between",
                         alignItems: "center",
